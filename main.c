@@ -6,8 +6,11 @@
 #include <stdlib.h>
 #include "console.h"
 
-#define ROWS 10
-#define COLS 10
+#define ROWS           10
+#define COLS           10
+
+#define LEFT_TOP_X     10
+#define LEFT_TOP_Y      2
 
 /// WHAT4: Show Array
 /// IN: Address of 2-dim array, rows, cols
@@ -19,7 +22,7 @@ void printArray(int **array, int rows, int cols)
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++)
         {
-            gotoxy(i*3 + 10, j);
+            gotoxy(j*3 + LEFT_TOP_X, i + LEFT_TOP_Y);
             printf("%d ", array[i][j]);
         }
         printf("\n");
@@ -59,7 +62,7 @@ int main()
         free(array[i]);
     }
     free(array);
+    clrscr();
     closeConsole();
-
     return 0;
 }
