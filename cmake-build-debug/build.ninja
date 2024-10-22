@@ -49,15 +49,15 @@ cmake_ninja_workdir = I$:/Technische_Informatik/C/battleship/cmake-build-debug/
 
 build cmake_object_order_depends_target_battleship: phony || CMakeFiles/battleship.dir
 
-build CMakeFiles/battleship.dir/main.cpp.obj: CXX_COMPILER__battleship_Debug I$:/Technische_Informatik/C/battleship/main.cpp || cmake_object_order_depends_target_battleship
-  DEP_FILE = CMakeFiles\battleship.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++23
+build CMakeFiles/battleship.dir/main.c.obj: C_COMPILER__battleship_Debug I$:/Technische_Informatik/C/battleship/main.c || cmake_object_order_depends_target_battleship
+  DEP_FILE = CMakeFiles\battleship.dir\main.c.obj.d
+  FLAGS = -g
   OBJECT_DIR = CMakeFiles\battleship.dir
   OBJECT_FILE_DIR = CMakeFiles\battleship.dir
 
-build CMakeFiles/battleship.dir/console.cpp.obj: CXX_COMPILER__battleship_Debug I$:/Technische_Informatik/C/battleship/console.cpp || cmake_object_order_depends_target_battleship
-  DEP_FILE = CMakeFiles\battleship.dir\console.cpp.obj.d
-  FLAGS = -g -std=gnu++23
+build CMakeFiles/battleship.dir/console.c.obj: C_COMPILER__battleship_Debug I$:/Technische_Informatik/C/battleship/console.c || cmake_object_order_depends_target_battleship
+  DEP_FILE = CMakeFiles\battleship.dir\console.c.obj.d
+  FLAGS = -g
   OBJECT_DIR = CMakeFiles\battleship.dir
   OBJECT_FILE_DIR = CMakeFiles\battleship.dir
 
@@ -69,7 +69,7 @@ build CMakeFiles/battleship.dir/console.cpp.obj: CXX_COMPILER__battleship_Debug 
 #############################################
 # Link the executable battleship.exe
 
-build battleship.exe: CXX_EXECUTABLE_LINKER__battleship_Debug CMakeFiles/battleship.dir/main.cpp.obj CMakeFiles/battleship.dir/console.cpp.obj
+build battleship.exe: C_EXECUTABLE_LINKER__battleship_Debug CMakeFiles/battleship.dir/main.c.obj CMakeFiles/battleship.dir/console.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\battleship.dir

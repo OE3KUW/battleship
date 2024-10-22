@@ -3,4 +3,4 @@ project(battleship)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(battleship main.cpp console.cpp)
+add_executable(battleship main.c console.c)
