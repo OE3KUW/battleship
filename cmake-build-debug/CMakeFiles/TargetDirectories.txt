@@ -1,0 +1,3 @@
+I:/Technische_Informatik/C/battleship/cmake-build-debug/CMakeFiles/battleship.dir
+I:/Technische_Informatik/C/battleship/cmake-build-debug/CMakeFiles/edit_cache.dir
+I:/Technische_Informatik/C/battleship/cmake-build-debug/CMakeFiles/rebuild_cache.dir
