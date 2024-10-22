@@ -6,13 +6,20 @@
 #include <stdlib.h>
 #include "console.h"
 
-/// Funktion, die das 2D-Array empfängt und es ausgibt
+#define ROWS 10
+#define COLS 10
+
+/// WHAT4: Show Array
+/// IN: Address of 2-dim array, rows, cols
+/// PRE: Memory must be allocated
 void printArray(int **array, int rows, int cols);
 
 void printArray(int **array, int rows, int cols)
 {
     for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+        for (int j = 0; j < cols; j++)
+        {
+            gotoxy(i*3 + 10, j);
             printf("%d ", array[i][j]);
         }
         printf("\n");
@@ -21,10 +28,12 @@ void printArray(int **array, int rows, int cols)
 
 int main()
 {
-    int rows = 3;
-    int cols = 4;
+    int rows = ROWS;
+    int cols = COLS;
 
     initConsole();
+    printf("start");
+    getch();
 
     // Speicher für ein 2D-Array allokieren
     int **array = (int **)malloc(rows * sizeof(int *));
