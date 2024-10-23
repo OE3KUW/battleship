@@ -22,7 +22,8 @@ void printArray(int **array, int rows, int cols)
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++)
         {
-            gotoxy(j * 3 + LEFT_TOP_X, i + LEFT_TOP_Y);
+            gotoxy(j * 3 + LEFT_TOP_X
+                   , i + LEFT_TOP_Y);
             printf("%d ", array[i][j]);
         }
         printf("\n");
